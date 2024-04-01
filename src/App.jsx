@@ -1,9 +1,11 @@
 import './App.scss';
+import Header from './widgets/header';
+
 
 function App() {
   return (
       <div>
-        <h1>dsddssddssd</h1>
+        <Header/>
       </div>
   )
 }
