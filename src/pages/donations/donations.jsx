@@ -1,12 +1,12 @@
 import React from 'react'
 import Header from '../../widgets/header'
-import './contacts.scss'
+import './donations.scss'
 
-export default function Contacts() {
+export default function Donations() {
   return (
     <div>
       <Header />
-      <h1>contacts</h1>
+      donations
     </div>
   )
 }
