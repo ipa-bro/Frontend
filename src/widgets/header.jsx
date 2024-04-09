@@ -23,7 +23,9 @@ export default function Header() {
                 <li className="header__nav-item"><Link to="/members">Участники</Link></li>
                 <li className="header__nav-item"><Link to="/join">Вступить</Link></li>
                 <li className="header__nav-item"><Link to="/donations">Пожертвовать</Link></li>
+                <li className="header__nav-item"><Link to="https://mpa71.ru/">Академия</Link></li>
                 <li className="header__nav-item"><Link to="/contacts">Контактная информация</Link></li>
+                
             </ul>
         </div>
         <MenuButton isActive={isOpen} onClick={()=> setOpen(!isOpen)}/>

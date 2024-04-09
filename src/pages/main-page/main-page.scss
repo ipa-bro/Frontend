@@ -8,6 +8,7 @@
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .mainPage-img{
@@ -56,15 +57,75 @@
 // Горизонтальная линия
 
 
-.line {
+.line1 {
+    width: 100%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-top: 7%;
+   }
+   .line2 {
     width: 100%;
     border-bottom: 1px solid rgb(0, 0, 0);
     margin-top: 3%;
    }
   
-  
+
+//Секция о нас
 
 
+.about__us{
+    margin-top: 5%;
+    &-text{
+        font-weight: 300;
+        margin-top: 5%;
+        p{
+            margin-top: 1%;
+            width: 50%;
+        }
+    }
+}
+
+.about__us-adv-component{
+    padding: 10px;
+    display: inline-flex;
+    display: flex;
+    small{
+        font-weight: 300;
+    }
+    &-img{
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        flex-shrink: 0;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.about__us-adv{
+    position: relative; 
+    width: 100vw;   
+    background: white; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.about__us-adv::before{
+    content: ""; 
+    position: absolute; 
+    top: -5px;  
+    left: -5px;  
+    width: calc(100% + 10px);  
+    height: calc(100% + 10px);  
+    border: 5px solid transparent;  
+    border-image: linear-gradient(180deg, #1b6fdb 0%, #fff 33.33%, #fff 63%, #007000 100.01%) 30; 
+}
 
 @media (max-width: 1000px){
     .container{
@@ -94,6 +155,19 @@
             font-size: 18px;
         }
     }
+    .about__us{
+        text-align: center;
+        p{
+            text-align: center;
+            width: 80%;
+            margin-left: 10%;
+        }
+    }
+    .about__us-adv{
+        margin-top: 3%;
+        width: 60vw;  
+        margin-left: 20%;
+    }
 }
 
 @media (max-width: 600px){
@@ -118,5 +192,22 @@
         h3{
             font-size: 14px;
         }
+    }
+    .about__us{
+        p{
+            font-size: 15px;
+        }
+    }
+    .about__us-adv{
+        margin-top: 3%;
+        width: 80vw;  
+        margin-left: 10%;
+        &-component{
+            font-size: 12px;
+        }
+    }
+    .about__us-adv-component-img{
+        height: 35px;
+        width: 35px;
     }
 }
