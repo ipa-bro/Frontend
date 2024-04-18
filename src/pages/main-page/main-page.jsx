@@ -12,6 +12,7 @@ import Downl from "../../img/downl.png";
 import Export from "../../img/export.png";
 import { SlActionRedo } from "react-icons/sl";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Footer from "../../widgets/foooter";
 
 export default function MainPage() {
   return (
@@ -260,6 +261,7 @@ export default function MainPage() {
           </div>
         </div>
       </div>
+    <Footer/>
     </div>
   );
 }

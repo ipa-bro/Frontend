@@ -1,0 +1,82 @@
+@media (min-width: 750px) {
+    .donations__content {
+        flex-direction: row;
+        .conditions {
+            width: 40vw;
+            max-width: 640px;
+        }
+        .exponential {
+            width: 40vw;
+            height: 30vw;
+
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .donations__content {
+        flex-direction: column;
+        align-items: center;
+        .conditions {
+            width: 90vw;
+            margin-block-end: 15px;
+        }
+        .exponential {
+            width: 70vw;
+            height: 50vw;
+        }
+    }
+}
+
+.donations {
+    background-color: #f9f9f9;
+    &__content {
+        max-height: 1030px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        column-gap: 5vw;
+        .conditions {
+            display: flex;
+            flex-direction: column;
+            font-size: clamp(16px, 2vw ,30px);
+            h3 { font-weight: 700; margin-block-end: 1vw;}
+            ul {
+                display: flex;
+                flex-direction: column;
+                row-gap: 0.5vw;
+                li {
+                    font-weight: 300;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 5vw;
+                        margin: 1vw;
+                    }
+                    strike {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .exponential { 
+            position: relative; 
+            margin-block: auto;
+            max-width: 700px;
+            background: white;
+            &::before {
+            content:"";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            width: calc(100% + 5px);
+            height: calc(100% + 5px);
+            border: 5px solid transparent;
+            border-image: linear-gradient(180deg, #1b6fdb 0%, #fff 33.33%, #fff 63%, #007000 100.01%) 30;
+            }
+        }
+    }
+}
