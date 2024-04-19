@@ -1,0 +1,99 @@
+@media (min-width: 900px) {
+    .form-line{
+        display: grid;
+        grid-template: 1fr / 1fr 1fr;
+        column-gap: 3vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .form-line{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    }
+}
+.JoinAnAssociation {
+    background-color: #f9f9f9;
+}
+.JoinAnAssociation__content {
+    margin-block-start: 6vh;
+    display: flex;
+    flex-direction: column;
+    h1 {
+        font-size: clamp(18px, 2.4vw, 30px);
+        text-align: center;
+        margin-block-end: 4vh;
+    }
+    .form-line {
+        padding-inline: 5vw;
+        width: 90%;
+        margin-block-end: 4vh;
+        form {
+            border: 5px solid transparent;
+            border-image: linear-gradient(180deg, #1b6fdb 0%, #fff 33.33%, #fff 63%, #007000 100.01%) 30;
+            h1 {
+                color: #1b6fdb;
+                margin-block-start: 4vh;
+            }
+            row-gap: 4vh;
+            padding-block-end: 4vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            input {
+                width: 60%;
+                border-radius: 10px;
+                height: 7vh;
+                margin-inline: auto;
+                border: 1px solid #202020;
+                padding-inline: 3%;
+                &:hover {cursor: pointer;}
+                &[type='file']{border: none;}
+                &:last-child {
+                    margin-block-start: -5vh;
+                    font-size: clamp(12px, 1.2vw, 16px);
+                    border: none;
+                    color: #f9f9f9;
+                    width: 40%;
+                    height: 9vh;
+                    background: #1b6fdb;
+                }
+            }
+        }
+        ul {
+            font-weight: 300;
+            display: flex;
+            flex-direction: column;
+            row-gap: 2vh;
+            li {
+                font-size: clamp(12px, 1.2vw, 16px);
+            }
+        }
+    }
+    hr {
+        margin-block: 4vh;
+    }
+    .join-also {
+        padding-inline: 5vw;
+        margin-block: 5vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4vh;
+        ul {
+            padding-inline: 3vw;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1vh;
+        }
+        p, li {
+            font-size: clamp(12px, 1.2vw, 16px);
+            font-weight: 300;
+        }
+        h2 {
+            font-size: clamp(14px, 1.5vw, 18px);
+            font-weight: 700px;
+        }
+    }
+}
