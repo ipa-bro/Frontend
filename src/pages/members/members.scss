@@ -1,0 +1,29 @@
+.members {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            font-size: 30px;
+        }
+
+        .members-list {
+            width: 100%;
+            height: 680px;
+            list-style: none;
+
+            display: grid;
+            grid-template: 1fr 1fr / repeat(4, 1fr);
+
+            li {
+
+
+                .li-text {
+                    .name {
+                        color: #1B6FDB;
+                    }
+                }
+            }
+        }
+    }
+}

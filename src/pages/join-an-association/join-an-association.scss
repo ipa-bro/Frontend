@@ -4,40 +4,46 @@
         grid-template: 1fr / 1fr 1fr;
         column-gap: 3vw;
     }
+    li {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 900px) {
     .form-line{
     display: flex;
     flex-direction: column;
-    row-gap: 5vh;
+    row-gap: 35px;
+    }
+    li {
+        font-size: clamp(12px, 2vw, 16px);
     }
 }
 .JoinAnAssociation {
     background-color: #f9f9f9;
 }
 .JoinAnAssociation__content {
-    margin-block-start: 6vh;
+    margin-block-start: 40px;
     display: flex;
     flex-direction: column;
     h1 {
         font-size: clamp(18px, 2.4vw, 30px);
         text-align: center;
-        margin-block-end: 4vh;
+        margin-block-end: 30px;
     }
     .form-line {
         padding-inline: 5vw;
         width: 90%;
-        margin-block-end: 4vh;
+        margin-block-end: 30px;
         form {
             border: 5px solid transparent;
             border-image: linear-gradient(180deg, #1b6fdb 0%, #fff 33.33%, #fff 63%, #007000 100.01%) 30;
             h1 {
                 color: #1b6fdb;
-                margin-block-start: 4vh;
+                margin-block-start: 30px;
             }
-            row-gap: 4vh;
-            padding-block-end: 4vh;
+            row-gap: 30px;
+            padding-block-end: 30px;
             position: relative;
             display: flex;
             flex-direction: column;
@@ -45,19 +51,19 @@
             input {
                 width: 60%;
                 border-radius: 10px;
-                height: 7vh;
+                height: 50px;
                 margin-inline: auto;
                 border: 1px solid #202020;
                 padding-inline: 3%;
                 &:hover {cursor: pointer;}
                 &[type='file']{border: none;}
                 &:last-child {
-                    margin-block-start: -5vh;
+                    margin-block-start: -35px;
                     font-size: clamp(12px, 1.2vw, 16px);
                     border: none;
                     color: #f9f9f9;
                     width: 40%;
-                    height: 9vh;
+                    height: 60px;
                     background: #1b6fdb;
                 }
             }
@@ -66,26 +72,23 @@
             font-weight: 300;
             display: flex;
             flex-direction: column;
-            row-gap: 2vh;
-            li {
-                font-size: clamp(12px, 1.2vw, 16px);
-            }
+            row-gap: 15px;
         }
     }
     hr {
-        margin-block: 4vh;
+        margin-block: 30px;
     }
     .join-also {
         padding-inline: 5vw;
-        margin-block: 5vh;
+        margin-block: 35px;
         display: flex;
         flex-direction: column;
-        row-gap: 4vh;
+        row-gap: 30px;
         ul {
             padding-inline: 3vw;
             display: flex;
             flex-direction: column;
-            row-gap: 1vh;
+            row-gap: 10px;
         }
         p, li {
             font-size: clamp(12px, 1.2vw, 16px);
