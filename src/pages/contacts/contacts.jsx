@@ -9,6 +9,7 @@ export default function Contacts() {
     <div className="contacts">
         <Header />
     <div className="contacts__content">
+        <div className="container">
         <h1>
             Московское региональное отделение
         </h1>
@@ -56,10 +57,10 @@ export default function Contacts() {
             <a href="https://yandex.ru/maps/?um=constructor%3Ad28f52aea2d5adc3b2579c2fd008e035603c89102ad6137cf765e02ddbecf2f9&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Ad28f52aea2d5adc3b2579c2fd008e035603c89102ad6137cf765e02ddbecf2f9&amp;width=600&amp;height=400&amp;lang=ru_RU" alt="" /></a>
             </div>
         </div>
-
+        </div>
         <hr />
         <hr />
-
+     <div className="container">
         <h1>
             Региональное отделение Башкортостана
         </h1>
@@ -106,6 +107,7 @@ export default function Contacts() {
             <div className="contacts__map">
                 <a href="https://yandex.ru/maps/?um=constructor%3Ad28f52aea2d5adc3b2579c2fd008e035603c89102ad6137cf765e02ddbecf2f9&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Ad28f52aea2d5adc3b2579c2fd008e035603c89102ad6137cf765e02ddbecf2f9&amp;width=600&amp;height=400&amp;lang=ru_RU" alt=""/></a>
             </div>
+        </div>
         </div>
     </div>
         <Footer />

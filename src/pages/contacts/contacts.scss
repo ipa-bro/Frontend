@@ -38,6 +38,7 @@
     h1 {
         text-align: center;
         margin-block: 3vh;
+        font-size: clamp(24px, 2.4vw, 30px);
     }
     hr {
         margin-block: 50px;

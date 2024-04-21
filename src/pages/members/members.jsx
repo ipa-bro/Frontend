@@ -2,6 +2,14 @@ import React from "react";
 import Header from "../../widgets/header";
 import Footer from "../../widgets/foooter"
 
+import Farahov from "../../img/members-img/Farahov.png"
+import Gaizullin from "../../img/members-img/Gaizullin.png"
+import Muhamadeev from "../../img/members-img/Muhamadeev.png"
+import Lavrentev from "../../img/members-img/Lavrentev.png"
+import Sharafutdinov from "../../img/members-img/Sharafutdinov.png"
+import Zinatullin from "../../img/members-img/Zinatullin.png"
+
+
 import "./members.scss"
 
 export default function Members() {
@@ -15,132 +23,108 @@ export default function Members() {
           </h1>
 
           <ul className="members-list">
-            <li>
-              <img src="" alt="member" />
+
+          <li id="Farahov">
+            {/* <div className="member"> */}
+             <img src={Farahov} alt="member" />
               <div className="li-text">
                 <b className="name">
-                  Приходько Юрий Васильевич
+                  Фарахов Тагир Гималиевич
                 </b>
                 <div className="job-title">
-                Генеральный секретарь, генерал-лейтенант полиции
+                  Президент БРО ВПА
                 </div>
                 <div className="li-line"></div>
                 <div className="date-of-birth">
-                  День рождения: 20.02.1985
+                  День рождения: 04.04.1947
                 </div>
               </div>
+              {/* </div> */}
             </li>
 
             <li>
-              <img src="" alt="member" />
+              <img src={Muhamadeev} alt="member" />
               <div className="li-text">
                 <b className="name">
-                  Приходько Юрий Васильевич
+                  Мухамадеев Индус Хамитович
                 </b>
                 <div className="job-title">
-                Генеральный секретарь, генерал-лейтенант полиции
+                  Вице - президент и казначей БРО ВПА
                 </div>
                 <div className="li-line"></div>
                 <div className="date-of-birth">
-                  День рождения: 20.02.1985
+                  День рождения: 02.10.1943
                 </div>
               </div>
+
             </li>
 
             <li>
-              <img src="" alt="member" />
+              <img src={Sharafutdinov} alt="member" />
               <div className="li-text">
                 <b className="name">
-                  Приходько Юрий Васильевич
+                  Шарафутдинов Шамиль Фатыхович
                 </b>
                 <div className="job-title">
-                Генеральный секретарь, генерал-лейтенант полиции
+                  Вице-президент БРО ВПА
                 </div>
                 <div className="li-line"></div>
                 <div className="date-of-birth">
-                  День рождения: 20.02.1985
+                  День рождения: 15.06.1953
                 </div>
               </div>
+
             </li>
 
             <li>
-              <img src="" alt="member" />
+              <img src={Gaizullin} alt="member" />
               <div className="li-text">
                 <b className="name">
-                  Приходько Юрий Васильевич
+                  Гайзуллин Радик Закуанович
                 </b>
                 <div className="job-title">
-                Генеральный секретарь, генерал-лейтенант полиции
+                  Секретарь БРО ВПА
                 </div>
                 <div className="li-line"></div>
                 <div className="date-of-birth">
-                  День рождения: 20.02.1985
+                  День рождения: 29.08.1970
                 </div>
               </div>
+
             </li>
 
             <li>
-              <img src="" alt="member" />
+              <img src={Zinatullin} alt="member" />
               <div className="li-text">
                 <b className="name">
-                  Приходько Юрий Васильевич
+                  Зинатуллин Арсен Альбертович
                 </b>
                 <div className="job-title">
-                Генеральный секретарь, генерал-лейтенант полиции
+                  Помощник Президента
                 </div>
                 <div className="li-line"></div>
                 <div className="date-of-birth">
-                  День рождения: 20.02.1985
+                  День рождения: 22.04.1989
                 </div>
               </div>
+
             </li>
 
             <li>
-              <img src="" alt="member" />
+              <img src={Lavrentev} alt="member" />
               <div className="li-text">
                 <b className="name">
-                  Приходько Юрий Васильевич
+                  Лаврентьев Сергей Николаевич
                 </b>
                 <div className="job-title">
-                Генеральный секретарь, генерал-лейтенант полиции
+                  Вице-президент БРО ВПА
                 </div>
                 <div className="li-line"></div>
                 <div className="date-of-birth">
-                  День рождения: 20.02.1985
+                  День рождения: 19.04.1952
                 </div>
               </div>
-            </li>
 
-            <li>
-              <img src="" alt="member" />
-              <div className="li-text">
-                <b className="name">
-                  Приходько Юрий Васильевич
-                </b>
-                <div className="job-title">
-                Генеральный секретарь, генерал-лейтенант полиции
-                </div>
-                <div className="li-line"></div>
-                <div className="date-of-birth">
-                  День рождения: 20.02.1985
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <img src="" alt="member" />
-              <div className="li-text">
-                <b className="name">
-                  Приходько Юрий Васильевич
-                </b>
-                <div className="job-title">
-                Генеральный секретарь, генерал-лейтенант полиции
-                </div>
-                <div className="li-line"></div>
-                <div className="date-of-birth">
-                  День рождения: 20.02.1985
-                </div>
-              </div>
             </li>
 
           </ul>

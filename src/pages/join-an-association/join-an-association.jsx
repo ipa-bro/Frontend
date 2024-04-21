@@ -9,6 +9,7 @@ export default function JoinAnAssociation() {
     <div className='JoinAnAssociation'>
         <Header />
         <div className="JoinAnAssociation__content">
+            <div className="container">
             <h1>
                 Для вступления в Башкирское региональное отделение ВПА необходимо подготовить и подать следующие документы:
             </h1>
@@ -56,8 +57,10 @@ export default function JoinAnAssociation() {
                     <input type='submit' value="Отправить анкету" className='join-form-button'/>
                 </form>
             </div>
+            </div>
             <hr />
             <hr />
+            <div className="container">
             <div className="join-also">
                 <p>
                     Вы также можете отправить заявку на вступление в IPA. Для формирования электронной заявки Вам необходимо подготовить следующие документы:
@@ -100,6 +103,7 @@ export default function JoinAnAssociation() {
                         Прошу принять меня в ряды Всероссийской полицейской ассоциации МПА. Я разделяю полностью цели и задачи ассоциации, закрепленные в ее Уставе и обязуюсь соблюдать все правила, изложенные в Уставе Всероссийской полицейской ассоциации МПА. Обязуюсь принимать участие в деятельности Ассоциации, добросовестно исполнять свои обязанности члена ВПА МПА, в установленные сроки ежегодно уплачивать членские взносы в свое Региональное отделение (регион).
                     </p>
                 </div>
+            </div>
             </div>
         </div>
         <Footer />
