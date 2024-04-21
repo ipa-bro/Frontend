@@ -21,10 +21,11 @@
 }
 .JoinAnAssociation {
     background-color: #f9f9f9;
+    .container {
+        flex-direction: column;
+    }
 }
-.container {
-    flex-direction: column;
-}
+
 .JoinAnAssociation__content {
     margin-block-start: 40px;
     display: flex;

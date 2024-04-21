@@ -26,6 +26,9 @@
 
 .contacts {
     background-color: #f9f9f9;
+    .container {
+        flex-direction: column;
+    }
 }
 
 .contacts__content {
