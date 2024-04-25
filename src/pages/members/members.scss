@@ -1,0 +1,107 @@
+.members {
+    padding-block: 30px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            font-size: 30px;
+        }
+
+        .members-list {
+            border-radius: 25px;
+            width: 100%;
+            list-style: none;
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            column-gap: 6vw;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: 3px solid #1B6FDB;
+                margin-block: 30px;
+                width: 80%;
+                box-shadow: 0 0 10px 1px rgba(30, 30, 30, 0.25);
+                border-radius: 12px;
+
+                &#Farahov {
+                    img {
+                        max-width: 330px;
+                        width: 100%;
+                    }
+                    .li-text {
+                        align-self: flex-start;
+                    }
+                }
+                img {
+                    width: 100%;
+                    border-bottom: 3px solid #1B6FDB;
+                    border-radius: 9px 9px 0 0;
+                }
+                .li-text {
+                    height: 115px;
+                    padding-inline: 15px;
+                    padding-block: 5px;
+                    font-size: 16px;
+                    .name {
+                        color: #1B6FDB;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .members-list{
+        margin-top: 15px;
+        li {
+            max-width: 210px;
+            &#Farahov {
+                max-width: 270px;
+                position: relative;
+                right: 30px;
+                margin-right: -60px;
+                width: 100%;
+                height: 360px;
+            }
+        }
+    }
+}
+@media (max-width: 720px) {
+    .members-list{
+        margin-top: 30px;
+        li {
+            max-width: 240px;
+            &#Farahov {
+                max-width: 300px;
+                position: relative;
+                right: 30px;
+                margin-right: -60px;
+                width: 100%;
+                height: 390px;
+            }
+        }
+    }
+}
+@media (min-width: 720px) {
+    .members-list{
+        margin-top: 35px;
+        li {
+            max-width: 270px;
+            &#Farahov {
+                max-width: 330px;
+                position: relative;
+                right: 30px;
+                margin-right: -60px;
+                width: 100%;
+                height: 420px;
+            }
+        }
+    }
+}

@@ -3,10 +3,10 @@
         flex-direction: row;
         column-gap: 4vw;
         .contacts__content__list {
-            width: 45vw;
+            width: 40vw;
         }
         .contacts__map {
-            width: 50vw;
+            width: 55vw;
         }
     }
 }
@@ -26,27 +26,31 @@
 
 .contacts {
     background-color: #f9f9f9;
+    .container {
+        flex-direction: column;
+    }
 }
 
 .contacts__content {
     &__line {
-    padding-inline: 1vw;
-    padding-block: 2vh;
+    padding-inline: 5vw;
+    padding-block: 15px;
     display: flex;
     align-items: center;
     }
     h1 {
         text-align: center;
         margin-block: 3vh;
+        font-size: clamp(24px, 2.4vw, 30px);
     }
     hr {
-        margin-block: 9vh;
+        margin-block: 50px;
     }
     &__list {
         display: flex;
         flex-direction: column;
         list-style: none;
-        row-gap: 5vh;
+        row-gap: 25px;
         .title {
             font-size: clamp(12px, 1.5vw, 16px);
             font-weight: 300;

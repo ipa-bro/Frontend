@@ -138,6 +138,7 @@
 
     .header__nav.active {
         transform: translateX(100%);
+        z-index: 10;
     }
 
     .header__nav-list {

@@ -6,6 +6,7 @@ import Donations from './pages/donations/donations'
 import MainPage from './pages/main-page/main-page'
 import News from './pages/news/news'
 import JoinAnAssociation from './pages/join-an-association/join-an-association'
+import Authorisation from "./pages/authorisation/authorisation";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                     <Route path="/donations" element={<Donations />} />
                     <Route path="/news" element={<News />} />
                     <Route path="/join" element={<JoinAnAssociation />} />
+                    <Route path="/out" element={<Authorisation />} />
                     <Route path="*" element={<MainPage />} />
                 </Routes>
             </div>

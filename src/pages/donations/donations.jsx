@@ -14,7 +14,7 @@ export default function Donations() {
   return (
     <div className="donations">
       <Header />
-        <div className="container">
+      <div className="container">
             <div className="donations__content">
                 <div className="conditions">
                     <h3>
@@ -37,9 +37,8 @@ export default function Donations() {
                 </div>
 
                 <div className="exponential"></div>
-
             </div>
-        </div>
+            </div>
       <Footer />
     </div>
   )
