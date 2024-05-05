@@ -15,26 +15,26 @@ export default function Footer() {
                     <li className="contacts__line">
                         <img src={phoneIcon} alt="phone" />
                         <p>
-                            +1 234 567 89 00
+                            +7 917 342 78 49
                         </p>
                     </li>
                     <li className="contacts__line">
                         <img src={emailIcon} alt="email" />
                         <p>
-                            ipabash@yandex.ru
+                            farahov_tg@mail.ru
                         </p>
                     </li>
                     <li className="contacts__line">
                         <img src={locationIcon} alt="location"/>
                         <p>
-                            119180, г. Москва, 1-й Голутвинский переулок, д. 3-5, стр. 1, 5 этаж
+                            г. Уфа, ул. Менделеева 128/1 секция "В"
                         </p>
                     </li>
                 </ul>
             </div>
             <hr />
             <div className="copyright">
-                © БРО МПА 1996
+                © БРО МПА 
             </div>
         </div>
     </footer>

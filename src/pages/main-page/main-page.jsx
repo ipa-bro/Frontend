@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../../widgets/header";
 import President from "../../img/president.jpeg";
 import "./main-page.scss";
@@ -121,10 +121,10 @@ export default function MainPage() {
           <div className="container">
             <div className="controll-news">
               <div className="controll-news-text">
-                <h1 className="head-text">Новости</h1>
+                <h1 className="head-text">Знаменательные даты</h1>
                 <p>
-                  Последние обновления и актуальные события: всегда в курсе
-                  самых важных новостей
+                  Важнейшие события для Башкирского реганального отделения
+                  всероссийской полицейской ассоциации
                 </p>
               </div>
               <div className="news__section">
@@ -142,13 +142,7 @@ export default function MainPage() {
                       </small>
                     </div>
                   </div>
-                  <div className="news__section-card-read">
-                    <div className="news__section-card-read-line"></div>
-                    <div className="news__section-card-read-text">
-                      <strong>Читать полностью</strong>{" "}
-                      <SlActionRedo className="linkButton" />
-                    </div>
-                  </div>
+
                 </div>
 
                 <div className="news__section-card">
@@ -165,13 +159,6 @@ export default function MainPage() {
                       </small>
                     </div>
                   </div>
-                  <div className="news__section-card-read">
-                    <div className="news__section-card-read-line"></div>
-                    <div className="news__section-card-read-text">
-                      <strong>Читать полностью</strong>{" "}
-                      <SlActionRedo className="linkButton" />
-                    </div>
-                  </div>
                 </div>
 
                 <div className="news__section-card">
@@ -186,13 +173,6 @@ export default function MainPage() {
                         подписал приказ № 650 «Об объявлении 23 января Днём
                         образования Башкирской полиции»
                       </small>
-                    </div>
-                  </div>
-                  <div className="news__section-card-read">
-                    <div className="news__section-card-read-line"></div>
-                    <div className="news__section-card-read-text">
-                      <strong>Читать полностью</strong>{" "}
-                      <SlActionRedo className="linkButton" />
                     </div>
                   </div>
                 </div>
@@ -202,9 +182,9 @@ export default function MainPage() {
         </div>
 
         <div className="button-to-news">
-          <button className="custom-button">
-            <Link to="/news">Посмотреть все новости</Link>
-          </button>
+          <Link to="/news">
+            <button className="custom-button">Посмотреть новости</button>{" "}
+          </Link>
         </div>
 
         <div className="line1"></div>
@@ -249,11 +229,21 @@ export default function MainPage() {
 
                 <div className="join__main-head-quest">
                   <h2>Отправить анкету</h2>
-                  <input type="text" placeholder="ФИО" className="join__main-head-quest-form"/>
-                  <input type="number" placeholder="Телефон" className="join__main-head-quest-form"/>
-                  <input type="file" className="join__main-head-quest-file"/>
+                  <input
+                    type="text"
+                    placeholder="ФИО"
+                    className="join__main-head-quest-form"
+                  />
+                  <input
+                    type="number"
+                    placeholder="Телефон"
+                    className="join__main-head-quest-form"
+                  />
+                  <input type="file" className="join__main-head-quest-file" />
                   <div className="join__main-head-quest-button">
-                    <button className="custom-button">Отправить анкету</button>
+                    <button type="submit" className="custom-button">
+                      Отправить анкету
+                    </button>
                   </div>
                 </div>
               </div>
@@ -261,7 +251,7 @@ export default function MainPage() {
           </div>
         </div>
       </div>
-    <Footer/>
+      <Footer />
     </div>
   );
 }

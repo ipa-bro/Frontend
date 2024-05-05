@@ -54,7 +54,7 @@ export default function JoinAnAssociation() {
                     <input type='text' placeholder='ФИО'/>
                     <input type='number' placeholder='Телефон'/>
                     <input type="file" name="" id="" />
-                    <input type='submit' value="Отправить анкету" className='join-form-button'/>
+                    <input type='submit' value="Отправить анкету" className="custom-button"/>
                 </form>
             </div>
             </div>
