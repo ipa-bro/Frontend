@@ -59,7 +59,7 @@
                 margin-inline: auto;
                 border: 1px solid #202020;
                 padding-inline: 3%;
-                &:hover {cursor: pointer;}
+                &:hover {cursor: auto;}
                 &[type='file']{border: none;}
                 &:last-child {
                     margin-block-start: -35px;

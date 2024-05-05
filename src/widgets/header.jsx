@@ -27,7 +27,7 @@ export default function Header() {
             <Link to="/news">Новости</Link>
           </li>
           <li className="header__nav-item">
-            <Link to="/members">Участники</Link>
+            <Link to="/members">Структура</Link>
           </li>
           <li className="header__nav-item">
             <Link to="/join">Вступить</Link>

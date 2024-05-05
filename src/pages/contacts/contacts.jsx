@@ -35,14 +35,14 @@ export default function Contacts() {
                         Телефон
                     </p>
                     <h3 className="main-text">
-                        +1 234 567 89 00
+                        +7 499 238 07 10
                     </h3>
                 </li>                <li>
                     <p className="title">
                         Email
                     </p>
                     <h3 className="main-text">
-                        ipabash@yandex.ru
+                        mosipa@mail.ru
                     </h3>
                 </li>                <li>
                     <p className="title">
@@ -54,7 +54,7 @@ export default function Contacts() {
                 </li>
             </ul>
             <div className="contacts__map">
-            <a href="https://yandex.ru/maps/?um=constructor%3Ad28f52aea2d5adc3b2579c2fd008e035603c89102ad6137cf765e02ddbecf2f9&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Ad28f52aea2d5adc3b2579c2fd008e035603c89102ad6137cf765e02ddbecf2f9&amp;width=600&amp;height=400&amp;lang=ru_RU" alt="" /></a>
+                <a href="https://yandex.ru/maps/?um=constructor%3A3169aa752e69f142056cce42a870f4d347a5f60da327b3b2a03f9ddc1a502146&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A3169aa752e69f142056cce42a870f4d347a5f60da327b3b2a03f9ddc1a502146&amp;width=500&amp;height=400&amp;lang=ru_RU" alt=""  /></a>
             </div>
         </div>
         </div>
