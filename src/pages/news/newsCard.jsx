@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
-import { SlActionRedo } from "react-icons/sl";
 import axios from "axios";
+import { SlActionRedo } from "react-icons/sl";
 import "./news.scss";
 
 const customModalStyles = {
@@ -21,23 +21,40 @@ const customModalStyles = {
   },
 };
 
-const NewsCard = ({ photoUrl, title, description, fullDescription }) => {
+const NewsCard = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [newsList, setNewsList] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("Ссылка на апи/url")
-      .then((response) => {
-        const { photoUrl, title, description, fullDescription } = response.data;
-        setPhotoUrl(photoUrl);
-        setTitle(title);
-        setDescription(description);
-        setFullDescription(fullDescription);
+    axios.get('http://127.0.0.1:8000/events')
+      .then(response => {
+        setNewsList(response.data);
       })
-      .catch((error) => {
-        console.log("ошибка при получении данных:", error);
+      .catch(error => {
+        console.log("Ошибка при получении данных:", error);
       });
-  }, []); 
+  }, []);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
+  return (
+    <div className="newsPage__section">
+      {newsList.map(newsItem => (
+        <NewsCardItem key={newsItem.id} newsItem={newsItem} />
+      ))}
+    </div>
+  );
+};
+
+const NewsCardItem = ({ newsItem }) => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const { photoUrl, title, description, fullDescription } = newsItem;
 
   const openModal = () => {
     setModalIsOpen(true);
