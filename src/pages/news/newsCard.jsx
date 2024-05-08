@@ -26,7 +26,7 @@ const NewsCard = () => {
   const [newsList, setNewsList] = useState([]);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/events')
+    axios.get(`${import.meta.env.VITE_APP_API_URL}/events`)
       .then(response => {
         setNewsList(response.data);
       })
