@@ -35,7 +35,7 @@ const JoinAnAssociation = () => {
     formData.append("pdf_file", file); 
  
     try { 
-      await axios.post("http://127.0.0.1:8000/invite", formData, { 
+      await axios.post((`${import.meta.env.VITE_APP_API_URL}/invite`), formData, { 
         headers: { 
           "Content-Type": "multipart/form-data", 
         }, 
