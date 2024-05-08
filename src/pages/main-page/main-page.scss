@@ -115,18 +115,6 @@
     border-image: linear-gradient(180deg, #1b6fdb 0%, #fff 33.33%, #fff 63%, #007000 100.01%) 30;
 }
 
-// .about__us-adv::before {
-//     content: "";
-//     position: absolute;
-//     top: -5px;
-//     left: -5px;
-//     width: calc(100% + 10px);
-//     height: calc(100% + 10px);
-
-// }
-
-// Секция новостей
-
 .news {
     margin-top: 5%;
 }
@@ -149,6 +137,11 @@
     height: 30%;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
+}
+
+.news__section-card-info-img img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .news__section-card-info {
