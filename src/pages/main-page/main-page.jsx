@@ -8,9 +8,10 @@ import Soc from "../../img/soc.png";
 import World from "../../img/world.png";
 import Commun from "../../img/commun.png";
 import Group from "../../img/group.png";
+import IPA from "../../img/ipa.jpeg";
+import Football from "../../img/football1.jpeg";
 import Downl from "../../img/downl.png";
 import Export from "../../img/export.png";
-import { SlActionRedo } from "react-icons/sl";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Footer from "../../widgets/foooter";
 
@@ -131,31 +132,13 @@ export default function MainPage() {
                 <div className="news__section-card">
                   <div className="news__section-card-info">
                     <div className="news__section-card-info-img">
-                      <img src={Group} alt="" />
+                      <img src={IPA} alt="" />
                     </div>
                     <div className="news__section-card-info-text">
-                      <strong>Башкирской полиции 100 лет!</strong>
+                      <strong>Основание ВПА</strong>
                       <small>
-                        17 августа 2017 года министр внутренних дел Башкирии
-                        подписал приказ № 650 «Об объявлении 23 января Днём
-                        образования Башкирской полиции»
-                      </small>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div className="news__section-card">
-                  <div className="news__section-card-info">
-                    <div className="news__section-card-info-img">
-                      <img src={Group} alt="" />
-                    </div>
-                    <div className="news__section-card-info-text">
-                      <strong>Башкирской полиции 100 лет!</strong>
-                      <small>
-                        17 августа 2017 года министр внутренних дел Башкирии
-                        подписал приказ № 650 «Об объявлении 23 января Днём
-                        образования Башкирской полиции»
+                        28 марта в 1992 году была основана Всероссийская
+                        полицейская ассоциация МПА. Объединяющая региональные отделения в Российской Федерации. 
                       </small>
                     </div>
                   </div>
@@ -167,11 +150,30 @@ export default function MainPage() {
                       <img src={Group} alt="" />
                     </div>
                     <div className="news__section-card-info-text">
-                      <strong>Башкирской полиции 100 лет!</strong>
+                      <strong>Основание Башкиркого отделения</strong>
                       <small>
-                        17 августа 2017 года министр внутренних дел Башкирии
-                        подписал приказ № 650 «Об объявлении 23 января Днём
-                        образования Башкирской полиции»
+                        18 июня 2007 году образовано Башкортостанское
+                        региональное отделение ВПА, силами Президента БРО ВПА
+                        МПА Фарахова Тагира Гималиевича и его сторонниками.
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="news__section-card">
+                  <div className="news__section-card-info">
+                    <div className="news__section-card-info-img">
+                      <img src={Football} alt=""/>
+                    </div>
+                    <div className="news__section-card-info-text">
+                      <strong>
+                        Открытие Центра развития и поддержки спорта в РБ
+                      </strong>
+                      <small>
+                        В 2008 году был открыт центр развития и поддержки спорта
+                        РБ - Мини-футбол. Команда по сей день показывает
+                        стабильно хорошие результаты на спортином поприще. Также
+                        ведутся работы по популяризации ЗОЖ.
                       </small>
                     </div>
                   </div>

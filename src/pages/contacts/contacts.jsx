@@ -37,6 +37,7 @@ export default function Contacts() {
                     <h3 className="main-text">
                         +7 499 238 07 10
                     </h3>
+                    
                 </li>                <li>
                     <p className="title">
                         Email
@@ -88,12 +89,16 @@ export default function Contacts() {
                     <h3 className="main-text">
                         8 917 342 78 49
                     </h3>
+                    <h3 className="main-text">
+                        8 937 472 94 98
+                    </h3>
                 </li>                <li>
                     <p className="title">
                         Email
                     </p>
                     <h3 className="main-text">
                         farahov_tg@mail.ru
+                        ufa@mail.mpa71.ru
                     </h3>
                 </li>                <li>
                     <p className="title">
