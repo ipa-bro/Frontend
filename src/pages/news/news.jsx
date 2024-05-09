@@ -20,19 +20,12 @@ export default function News() {
 }
 
 
-
-
-
-
-
-
-
 // import React, { useState } from "react";
 // import Header from "../../widgets/header";
 // import Footer from "../../widgets/foooter";
 // import { SlActionRedo } from "react-icons/sl";
 // import "./news.scss";
-// import NewsCard from "./newsQuery";
+// import NewsCard from "./newsCard";
 
 // export default function News() {
 //   return (

@@ -271,7 +271,7 @@ export default function MainPage() {
                   </div>
                 </div>
 
-                <div className="join__main-head-quest" onSubmit={handleSubmit}>
+                <form className="join__main-head-quest" onSubmit={handleSubmit}>
                   <h2>Отправить анкету</h2>
                   <input
                     type="text"
@@ -294,11 +294,10 @@ export default function MainPage() {
                     onChange={handleFileChange}
                   />
                   <div className="join__main-head-quest-button">
-                    <button type="submit" className="custom-button">
-                      Отправить анкету
-                    </button>
+                    <input type="submit" className="custom-button" value="Отправить">
+                    </input>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
