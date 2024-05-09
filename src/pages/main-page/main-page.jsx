@@ -16,6 +16,47 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Footer from "../../widgets/foooter";
 
 export default function MainPage() {
+  const [file, setFile] = useState(null);
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [username, setUsername] = useState("");
+
+  const handleFileChange = (event) => {
+    setFile(event.target.files[0]);
+  };
+
+  const handlePhoneNumberChange = (event) => {
+    setPhoneNumber(event.target.value);
+  };
+
+  const handleUsernameChange = (event) => {
+    setUsername(event.target.value);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    if (!file) {
+      alert("Пожалуйста, выберите файл для загрузки");
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append("phone_number", phoneNumber);
+    formData.append("username", username);
+    formData.append("pdf_file", file);
+
+    try {
+      await axios.post(`${import.meta.env.VITE_APP_API_URL}/invite`, formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
+      alert("Файл успешно отправлен, спасибо!");
+    } catch (error) {
+      console.error("Ошибка загрузки файла:", error);
+      alert("Произошла ошибка при загрузке файла");
+    }
+  };
   return (
     <div>
       <Header />
@@ -138,7 +179,8 @@ export default function MainPage() {
                       <strong>Основание ВПА</strong>
                       <small>
                         28 марта в 1992 году была основана Всероссийская
-                        полицейская ассоциация МПА. Объединяющая региональные отделения в Российской Федерации. 
+                        полицейская ассоциация МПА. Объединяющая региональные
+                        отделения в Российской Федерации.
                       </small>
                     </div>
                   </div>
@@ -163,7 +205,7 @@ export default function MainPage() {
                 <div className="news__section-card">
                   <div className="news__section-card-info">
                     <div className="news__section-card-info-img">
-                      <img src={Football} alt=""/>
+                      <img src={Football} alt="" />
                     </div>
                     <div className="news__section-card-info-text">
                       <strong>
@@ -229,19 +271,28 @@ export default function MainPage() {
                   </div>
                 </div>
 
-                <div className="join__main-head-quest">
+                <div className="join__main-head-quest" onSubmit={handleSubmit}>
                   <h2>Отправить анкету</h2>
                   <input
                     type="text"
                     placeholder="ФИО"
                     className="join__main-head-quest-form"
+                    value={username}
+                    onChange={handleUsernameChange}
                   />
                   <input
                     type="number"
                     placeholder="Телефон"
                     className="join__main-head-quest-form"
+                    value={phoneNumber}
+                    onChange={handlePhoneNumberChange}
                   />
-                  <input type="file" className="join__main-head-quest-file" />
+                  <input
+                    type="file"
+                    accept=".pdf"
+                    className="join__main-head-quest-file"
+                    onChange={handleFileChange}
+                  />
                   <div className="join__main-head-quest-button">
                     <button type="submit" className="custom-button">
                       Отправить анкету
