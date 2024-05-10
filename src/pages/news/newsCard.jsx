@@ -21,16 +21,26 @@ const customModalStyles = {
   },
 };
 
+const transformPhotoUrl = (url) => {
+  const basePath = "/var/www/dist";
+  return url.replace(basePath, "");
+};
+
 const NewsCard = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [newsList, setNewsList] = useState([]);
 
   useEffect(() => {
-    axios.get(`${import.meta.env.VITE_APP_API_URL}/events`)
-      .then(response => {
-        setNewsList(response.data);
+    axios
+      .get(`${import.meta.env.VITE_APP_API_URL}/events`)
+      .then((response) => {
+        const updatedNewsList = response.data.map((newsItem) => ({
+          ...newsItem,
+          photoUrl: transformPhotoUrl(newsItem.photoUrl),
+        }));
+        setNewsList(updatedNewsList.reverse());
       })
-      .catch(error => {
+      .catch((error) => {
         console.log("Ошибка при получении данных:", error);
       });
   }, []);
@@ -45,7 +55,7 @@ const NewsCard = () => {
 
   return (
     <div className="newsPage__section">
-      {newsList.map(newsItem => (
+      {newsList.map((newsItem) => (
         <NewsCardItem key={newsItem.id} newsItem={newsItem} />
       ))}
     </div>

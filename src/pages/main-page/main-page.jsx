@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "../../widgets/header";
 import President from "../../img/president.jpeg";
+import axios from "axios"; 
 import "./main-page.scss";
 import "../../widgets/mixins.scss";
 import Police from "../../img/police.png";
@@ -271,10 +272,11 @@ export default function MainPage() {
                   </div>
                 </div>
 
-                <div className="join__main-head-quest" onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className="join__main-head-quest">
                   <h2>Отправить анкету</h2>
                   <input
                     type="text"
+                    name="fullName"
                     placeholder="ФИО"
                     className="join__main-head-quest-form"
                     value={username}
@@ -282,6 +284,7 @@ export default function MainPage() {
                   />
                   <input
                     type="number"
+                    name="phoneNumber"
                     placeholder="Телефон"
                     className="join__main-head-quest-form"
                     value={phoneNumber}
@@ -290,15 +293,19 @@ export default function MainPage() {
                   <input
                     type="file"
                     accept=".pdf"
+                    name=""
+                    id=""
                     className="join__main-head-quest-file"
                     onChange={handleFileChange}
                   />
                   <div className="join__main-head-quest-button">
-                    <button type="submit" className="custom-button">
-                      Отправить анкету
-                    </button>
+                    <input
+                      type="submit"
+                      className="custom-button"
+                      value="Отправить"
+                    />
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
