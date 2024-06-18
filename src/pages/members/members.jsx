@@ -8,7 +8,7 @@ import Muhamadeev from "../../img/members-img/Muhamadeev.png";
 import Lavrentev from "../../img/members-img/Lavrentev.png";
 import Sharafutdinov from "../../img/members-img/Sharafutdinov.png";
 import Zinatullin from "../../img/members-img/Zinatullin.png";
-import Safonov from "../../img/members-img/safonov.jpeg";
+import Safonov from "../../img/members-img/safonov.jpg";
 import "./members.scss";
 
 export default function Members() {
