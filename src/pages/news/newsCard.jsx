@@ -27,7 +27,6 @@ const transformPhotoUrl = (url) => {
 };
 
 const NewsCard = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
   const [newsList, setNewsList] = useState([]);
 
   useEffect(() => {
@@ -45,14 +44,6 @@ const NewsCard = () => {
       });
   }, []);
 
-  const openModal = () => {
-    setModalIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalIsOpen(false);
-  };
-
   return (
     <div className="newsPage__section">
       {newsList.map((newsItem) => (
@@ -64,7 +55,8 @@ const NewsCard = () => {
 
 const NewsCardItem = ({ newsItem }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const { photoUrl, title, description, fullDescription } = newsItem;
+  const { photoUrl, title, description, fullDescription, date, location } =
+    newsItem; 
 
   const openModal = () => {
     setModalIsOpen(true);
@@ -73,6 +65,15 @@ const NewsCardItem = ({ newsItem }) => {
   const closeModal = () => {
     setModalIsOpen(false);
   };
+
+ 
+  const formattedDate = date
+    ? new Date(date).toLocaleDateString("ru-RU", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })
+    : "Дата не указана";
 
   return (
     <div className="newsPage__section-card">
@@ -83,6 +84,9 @@ const NewsCardItem = ({ newsItem }) => {
         <div className="newsPage__section-card-info-text">
           <strong>{title}</strong>
           <small>{description}</small>
+
+          {date && <small>Дата: {formattedDate}</small>}
+          {location && <small>Место проведения: {location}</small>}
         </div>
       </div>
       <div className="newsPage__section-card-read">
@@ -100,6 +104,12 @@ const NewsCardItem = ({ newsItem }) => {
       >
         <div className="modal">
           <h2 className="modalName">{title}</h2>
+          {date && <p>
+            <strong>Дата:</strong> {formattedDate}
+          </p>}
+          {location && <p>
+            <strong>Место проведения:</strong> {location}
+          </p>}
           <div className="modalPhoto">
             <img src={photoUrl} alt="" />
           </div>

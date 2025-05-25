@@ -5,6 +5,8 @@ import ruble from "../../img/icons/ruble-Icon.svg";
 import "./donations.scss";
 import Header from "../../widgets/header";
 import Footer from "../../widgets/foooter";
+import QR from "../../img/icons/qr.png";
+
 
 
 export default function Donations() {
@@ -37,7 +39,15 @@ export default function Donations() {
             </ul>
           </div>
 
-          <div className="exponential"></div>
+          <a
+            href="https://auth.robokassa.ru/merchant/Invoice/OSP2qfmLGk-RBbIBDKdpXw"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="exponential">
+              <img src={QR} alt="qr-code" />
+            </div>
+          </a>
         </div>
 
           <p className="contract">
