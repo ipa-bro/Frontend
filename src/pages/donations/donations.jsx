@@ -8,6 +8,7 @@ import Footer from "../../widgets/foooter";
 import QR from "../../img/icons/qr.png";
 
 
+
 export default function Donations() {
   return (
     <div className="donations">

@@ -8,7 +8,7 @@ import Muhamadeev from "../../img/members-img/Muhamadeev.png";
 import Lavrentev from "../../img/members-img/Lavrentev.png";
 import Sharafutdinov from "../../img/members-img/Sharafutdinov.png";
 import Zinatullin from "../../img/members-img/Zinatullin.png";
-import Safonov from "../../img/members-img/safonov.jpeg";
+import Safonov from "../../img/members-img/safonov.jpg";
 import "./members.scss";
 
 export default function Members() {
@@ -83,17 +83,6 @@ export default function Members() {
                 <div className="date-of-birth">День рождения: 19.04.1952</div>
               </div>
             </li>
-
-            <div className="last-line-card">
-              <div className="last-line-card-img">
-                <img src={Safonov} alt="member" />
-              </div>
-              <div className="li-txt">
-                <b className="name">Сафонов Владимир <br />Краснославович</b>
-                <div className="job-title">Вице-президент БРО ВПА</div>
-                <div className="date-of-birth">День рождения: 07.01.1961</div>
-              </div>
-            </div>
           </ul>
         </div>
       </div>
